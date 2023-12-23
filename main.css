@@ -202,95 +202,7 @@ body{
     padding-bottom: 30px;
     margin-top: 100px;
 }
-/*---------------------------------------------------*/
-/*.kombo-text{*/
-
-/*    color: #FFF;*/
-/*    font-size: 60px;*/
-/*    font-weight: 600;*/
-/*    margin-left: 410px;*/
-/*    margin-top: 100px;*/
-/*}*/
-/*.tasty{*/
-/*    display: flex;*/
-/*    flex-wrap: wrap ;*/
-/*    gap: 20px;*/
-/*}*/
-/*.tasty .card_2 {*/
-/*    max-width: 385px;*/
-/*    border-radius: 4px;*/
-/*    border: 1px solid #FFF;*/
-/*    text-align: center;*/
-/*    color: #fff;*/
-/*    padding: 23px 45px;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: space-between;*/
-/*}*/
-
-/*.tasty{*/
-/*    display: flex;*/
-/*    margin-left: 410px;*/
-/*    !*justify-content: space-between;*!*/
-/*    align-items: center;*/
-/*    !*justify-content: center;*!*/
-/*}*/
-/*.tasty .card_2  p {*/
-/*    text-align: left;*/
-/*    !*font-size: 18px;*!*/
-/*    font-weight: 400;*/
-/*    margin-bottom: 22px;*/
-/*    align-items: center;*/
-
-/*}*/
-/*.card_2 .price-3 button{*/
-/*    padding: 4px 12px;*/
-/*    border: 0;*/
-/*    background-color: #06f;*/
-/*    color: white;*/
-/*    font-size: 22px;*/
-/*    cursor: pointer;*/
-/*    border-radius: 3px;*/
-/*    align-items: center;*/
-/*    !*justify-content: center;*!*/
-/*}*/
-/*.tasty .card_2 {*/
-/*    max-width: 385px;*/
-/*    border-radius: 4px;*/
-/*    border: 1px solid #FFF;*/
-/*    text-align: center;*/
-/*    color: #fff;*/
-/*    padding: 23px 45px;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: center;*/
-/*    justify-content: space-between;*/
-/*}*/
-/*.tasty .card_2 h5 {*/
-/*    text-align: left;*/
-/*    font-size: 25px;*/
-/*    font-weight: 600;*/
-/*    margin-bottom: 12px;*/
-/*    align-items: center;*/
-/*}*/
-/*.price-3{*/
-/*    color: #010BFF;*/
-/*    font-size: 32px;*/
-/*    font-weight: 600;*/
-/*}*/
-/*.card_2 .price-3{*/
-/*    color: #06F;*/
-/*    font-size: 32px;*/
-/*    font-weight: 600;*/
-/*}*/
-/*.price-3{*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*}*/
-/*.card_2{*/
-/*    align-items: center;*/
-/*}*/
+/*------------------------------------------------------------------*/
 .tasty{
     display: flex;
     flex-wrap: wrap ;
@@ -438,4 +350,21 @@ body{
 }
 .imageMenu img{
     margin-right:410px ;
+}
+/*-[----*/
+.cart{
+    position: relative;
+}
+.cart-count{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -5px;
+    top: 0;
+    display: none;
 }

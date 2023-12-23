@@ -88,6 +88,13 @@ const pizza = [
 
 ]
 const div = document.querySelector(".products")
+const cartSpan=document.querySelector(".cart-count")
+const cartElement=document.querySelector(".cart")
+let cart=[]
+cartElement.onclick = () => {
+    window.location.href = "cart.html"
+    localStorage.setItem('cart', JSON.stringify(cart))
+}
 pizza.forEach( (el) => {
     div.innerHTML += `
     <div class="card">
@@ -98,12 +105,25 @@ pizza.forEach( (el) => {
     </div>
     <div class="price">
             <p>${el.price} $</p>
-            <button>+</button>
+            <button onclick="addToCart(${el.id})">+</button>
     </div>
     </div>`
 
 
 } )
+
+function addToCart(productId){
+    alert("Товар добавлен в корзину" + productId)
+    const pizzaOne = pizza.find(el => el.id === productId)
+    // alert(JSON.stringify(pizzaOne))
+    cart.push(pizzaOne)
+    console.log(cart, '-----korzina')
+    if(cart.length>0){
+        cartSpan.style.display = "flex"
+        cartSpan.innerHTML = cart.length
+    }
+}
+
 const Kombo = [
     {
         id:1,
